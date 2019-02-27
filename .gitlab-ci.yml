@@ -1,6 +1,7 @@
 stages:
   - build
   - test
+  - test2
 
 #定义job:
 bbs:
@@ -18,3 +19,13 @@ bbsb:
     - mkdir -p /tmp/gitlabttt/
     - echo "doing build" >> /tmp/gitlabttt/t2.txt
     - echo "bbsb.stop build..."
+
+myjob2:
+  stage: test2
+  script:
+    - echo "iam test 2..."
+    - pwd
+    - whoami
+    - env > /tmp/gitlabttt/env.txt
+    - git status
+    - allcolor.sh
