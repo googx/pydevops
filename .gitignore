@@ -1,0 +1,45 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+### vrv-app-store
+ehcacheTestDisk/
+ldoc/
+ldoc
+dood-appsotre-doc
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.settings/
+.springBeans
+.sts4-cache
+xbuild/
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+*.jar
+logs/
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+dist/
+/nbdist/
+/.nb-gradle/
+/th5/
+/logs
+release.properties
+/test/
+*.log
+*.zip
+node_modules/
+~$*.docx
+~$*.doc
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
+~$*.rtf
