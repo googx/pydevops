@@ -7,7 +7,7 @@ bbs:
   stage: test
   script:
     - echo "bbs.beging test..."
-    - mkdir /tmp/gitlabttt/
+    - mkdir -p /tmp/gitlabttt/
     - echo "doing test" >> /tmp/gitlabttt/t1.txt
     - echo "bbs.stop test..."
 
@@ -15,6 +15,6 @@ bbsb:
   stage: build
   script:
     - echo "bbsb.beging build..."
-    - mkdir /tmp/gitlabttt/
+    - mkdir -p /tmp/gitlabttt/
     - echo "doing build" >> /tmp/gitlabttt/t2.txt
     - echo "bbsb.stop build..."
