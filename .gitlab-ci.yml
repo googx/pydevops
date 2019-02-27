@@ -1,0 +1,20 @@
+stages:
+  - build
+  - test
+
+#定义job:
+bbs:
+  stage: test
+  script:
+    - echo "bbs.beging test..."
+    - mkdir /tmp/gitlabttt/
+    - echo "doing test" >> /tmp/gitlabttt/t1.txt
+    - echo "bbs.stop test..."
+
+bbsb:
+  stage: build
+  script:
+    - echo "bbsb.beging build..."
+    - mkdir /tmp/gitlabttt/
+    - echo "doing build" >> /tmp/gitlabttt/t2.txt
+    - echo "bbsb.stop build..."
