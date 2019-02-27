@@ -24,6 +24,8 @@ myjob2:
   stage: test2
   script:
     - echo "iam test 2..."
+    - echo "iam test 2..."
+    - echo "iam test 我是新代码..."
     - pwd
     - whoami
     - env > /tmp/gitlabttt/env.txt
