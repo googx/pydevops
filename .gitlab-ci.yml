@@ -31,3 +31,4 @@ myjob2:
     - env > /tmp/gitlabttt/env.txt
     - git status
     - allcolor.sh
+  when: manual
