@@ -15,8 +15,12 @@ bbs:
     - echo "doing test" >> /tmp/gitlabttt/t1.txt
     - echo "bbs.stop test..."
 #  You can setup jobs to only use Runners with specific tags. Separate tags with commas.
-  tags:
-    - pytesttag
+#  tags:
+# TODO 可以成功,不过由于这个tags注册的runner是个docker的.就用docker安装了.
+#而这个我还不是很了解.先跳过.
+#    - pytesttag
+
+
 #job-bbsb
 bbsb:
 #  stage: build
