@@ -1,5 +1,6 @@
 stages:
-  - build
+#  - build
+  - build-docker
   - test
   - test2
 
@@ -32,3 +33,11 @@ myjob2:
     - git status
     - allcolor.sh
   when: manual
+
+builddocker:
+  stage: build-docker
+  script:
+    - echo "doing build docker image ${CI_PROJECT_NAME}"
+    - ./build.sh
+    - echo "finish build docker image."
+
