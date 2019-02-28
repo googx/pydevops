@@ -16,17 +16,17 @@ for item in sss:
     print("py:%s" % (item))
 
 from flask import Flask
-from flask import Response
 
 app = Flask(__name__)
 
 
 @app.route("/test")
 def test():
-    print("hello,world")
-
-    return Response(response=sss)
+    logtext = "hello,world:123456"
+    print(logtext)
+    return logtext
+    # return Response(response=sss)
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=8888,debug=False)
+    app.run(host="0.0.0.0", port=8888, debug=False)
