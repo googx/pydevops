@@ -8,4 +8,4 @@ LABEL "build.type"="debug" "name"="pydevops" "desc"="这是用来批量创建测
 
 
 EXPOSE 8888
-CMD ['python','test.py']
+CMD ["python","test.py"]
