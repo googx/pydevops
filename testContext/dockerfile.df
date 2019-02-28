@@ -1,0 +1,11 @@
+FROM baseflask:latest
+LABEL "site"="https://www.thesunboy.com" "auther"="hx940929"
+COPY . /data
+WORKDIR /data
+
+LABEL "build.type"="debug" "name"="pydevops" "desc"="这是用来批量创建测试docker镜像的."
+
+
+
+EXPOSE 8888
+CMD ['python','test.py']

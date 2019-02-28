@@ -9,3 +9,21 @@
 #---------------------说明--------------------------
 #
 #---------------------------------------------------
+import os
+
+sss=os.listdir('.')
+for item in sss:
+    print("py:%s"%(item))
+
+from flask import Flask
+from flask import Response
+app=Flask(__name__)
+
+@app.route("/test")
+def test():
+    print("hello,world")
+
+    return Response(response=sss)
+
+if __name__ == '__main__':
+    app.run(port=8888)
