@@ -1,3 +1,4 @@
+#定义持续集成(CI)阶段
 stages:
 #  - build
   - build-docker
@@ -5,6 +6,7 @@ stages:
   - test2
 
 #定义job:
+#job-bbs
 bbs:
   stage: test
   script:
@@ -12,9 +14,14 @@ bbs:
     - mkdir -p /tmp/gitlabttt/
     - echo "doing test" >> /tmp/gitlabttt/t1.txt
     - echo "bbs.stop test..."
-
+#  You can setup jobs to only use Runners with specific tags. Separate tags with commas.
+  tags:
+    - pytesttag
+#job-bbsb
 bbsb:
-  stage: build
+#  stage: build
+#  使用未声明的阶段build,gitlab会报错(yaml invalid ).
+  stage: test
   script:
     - echo "bbsb.beging build..."
     - mkdir -p /tmp/gitlabttt/
