@@ -1,10 +1,11 @@
 #定义持续集成(CI)阶段
 stages:
 #  - build
-  - build-docker
+  - docker-build
   - test
   - test2
-
+  - docker-run
+  - test
 #定义job:
 #job-bbs
 bbs:
@@ -46,9 +47,15 @@ myjob2:
   when: manual
 
 builddocker:
-  stage: build-docker
+  stage: docker-build
   script:
     - echo "doing build docker image ${CI_PROJECT_NAME}"
-    - ./build.sh
+    - ./build.sh build
     - echo "finish build docker image."
 
+rundocker:
+  stage: docker-run
+  script:
+    - echo "doing run docker container ${CI_PROJECT_NAME}"
+    - ./build.sh run
+    - echo "finish run docker container."
