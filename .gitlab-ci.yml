@@ -13,6 +13,7 @@ bbs:
   script:
     - echo "bbs.beging test..."
     - mkdir -p /tmp/gitlabttt/
+    - notify-send "testtttt..."
     - echo "doing test" >> /tmp/gitlabttt/t1.txt
     - echo "bbs.stop test..."
 #  You can setup jobs to only use Runners with specific tags. Separate tags with commas.
