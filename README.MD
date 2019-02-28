@@ -1,5 +1,5 @@
-
-# GitLab CI/CD变量 
+# GitLab CI/CD变量
+> [参考来源地址](https://www.yiibai.com/gitlab/gitlab_ci_cd_variables.html#article-start) 
 > ### 下表显示了GitLab CI / CD变量的列表。
 
 |编号| 	变量 |	GitLab| 	Runner |	描述|
