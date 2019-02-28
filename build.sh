@@ -11,6 +11,7 @@
 #先尝试使用low版的 sh调用docker打包镜像,
 #等等在试试gitlab提供的docker方式.
 
+notify-send "beging... "
 function build() {
     echo "build pydevops:v1.0 ing ...."
     resuMsg=$(docker build --file testContext/dockerfile.df --tag pydevops:v1.0 .)
